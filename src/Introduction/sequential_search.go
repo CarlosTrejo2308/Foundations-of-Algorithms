@@ -1,14 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 	"strconv"
-	"strings"
 )
 
-// Get input form the user
+/* // Get input form the user
 func getUserData() string {
 	reader := bufio.NewReader(os.Stdin)
 
@@ -16,12 +13,11 @@ func getUserData() string {
 	// convert CRLF to LF
 	text = strings.Replace(text, "\n", "", -1)
 	text = strings.Replace(text, "\r", "", -1)
-	
 
 	return text
 
 }
-
+*/
 // Searchs in the whole array to find an element
 // n, lenght of the array
 // S, array to search
@@ -41,15 +37,15 @@ func SequentialSearch(n int, S []int, x int, location *int) {
 	}
 }
 
-func main() {
+func mainSequential() {
 	// Default variables
 	array := []int{3, 4, 8, 9, 12, 24, 27, 70}
 	n := cap(array)
 	var location int
-	
+
 	// Get number to search
 	fmt.Print("What number to find? : ")
-	userInput := getUserData()
+	userInput := GetUserData()
 	x, _ := strconv.Atoi(userInput)
 
 	// Search
