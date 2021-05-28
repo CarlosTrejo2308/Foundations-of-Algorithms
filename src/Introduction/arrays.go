@@ -9,3 +9,15 @@ func addArray(n int, S []int) (result int) {
 
 	return
 }
+
+func exchangeSort(n int, S []int) {
+
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			if S[j] < S[i] {
+				S[i], S[j] = S[j], S[i]
+			}
+		}
+	}
+
+}
