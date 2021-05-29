@@ -51,7 +51,7 @@ func mainBinSearch() {
 	} else {
 		fmt.Printf("The number %d is in the index %d", x, location)
 	}
-	fmt.Printf(" with %d comparisionan\n", comp)
+	fmt.Printf(" with %d comparisions\n", comp)
 
 }
 
@@ -96,6 +96,6 @@ func mainSequential() {
 	} else {
 		fmt.Printf("The number %d is in the index %d", x, location)
 	}
-	fmt.Printf(" with %d comparisionan\n", comp)
+	fmt.Printf(" with %d comparisions\n", comp)
 
 }
