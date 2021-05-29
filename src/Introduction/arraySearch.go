@@ -20,6 +20,7 @@ func BinSearch(S []int, x int, location *int) int {
 		comparisons++
 		mid = int(math.Floor(float64(low+high) / float64(2.0)))
 
+		// Basic operation
 		if x == S[mid] {
 			*location = mid
 		} else if x < S[mid] {
@@ -56,17 +57,30 @@ func mainBinSearch() {
 }
 
 // Searchs in the whole array to find an element
-// n, lenght of the array
+// n, lenght of the array, input size
 // S, array to search
 // x, number to find
 // location, index to save the index
+
+// W(n) = n
+
+/* Average
+k: array slot
+
+if x in the array
+A(n) = (n + 1) / n
+
+
+if x may not be in the array
+A(n) = n * ( 1 - ( p / n ) ) + ( p / 2 )
+*/
 func SequentialSearch(n int, S []int, x int, location *int) int {
 	comparisons := 0
 
 	*location = 0
 
 	// Keep looking until we find the elemnt or we run the whole array
-	for *location < n && S[*location] != x {
+	for *location < n && S[*location] != x { // Basic operation
 		comparisons++
 		*location++
 	}
