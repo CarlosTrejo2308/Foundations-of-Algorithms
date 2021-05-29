@@ -42,3 +42,11 @@ func MatrixMultiplication(n int, A, B, C [][]int) {
 		}
 	}
 }
+
+func Fact(n int) int {
+	if n == 0 {
+		return 1
+	} else {
+		return n * Fact(n-1)
+	}
+}
