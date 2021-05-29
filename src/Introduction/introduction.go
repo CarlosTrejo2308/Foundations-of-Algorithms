@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("Choose a program to run:\n\t1. Sequential Search\n\t2. Add array members\n\t3. Exchange sort")
-	fmt.Println("\t4. Matrix multiplication\n\t5. Secuential Search")
+	fmt.Println("\t4. Matrix multiplication\n\t5. Secuential Search\n\t6. Binary Search")
 
 	fmt.Print("> ")
 	userInput := GetUserData()
@@ -38,6 +38,8 @@ func main() {
 
 	case 5:
 		mainSequential()
+	case 6:
+		mainBinSearch()
 	default:
 		fmt.Println("No such case")
 	}
