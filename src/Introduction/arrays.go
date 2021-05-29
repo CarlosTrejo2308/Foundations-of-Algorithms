@@ -1,6 +1,6 @@
 package main
 
-func addArray(n int, S []int) (result int) {
+func AddArray(n int, S []int) (result int) {
 	result = 0
 
 	for i := 0; i < n; i++ {
@@ -10,7 +10,7 @@ func addArray(n int, S []int) (result int) {
 	return
 }
 
-func exchangeSort(n int, S []int) {
+func ExchangeSort(n int, S []int) {
 
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
@@ -22,7 +22,7 @@ func exchangeSort(n int, S []int) {
 
 }
 
-func matrixMultiplication(n int, A, B, C [][]int) {
+func MatrixMultiplication(n int, A, B, C [][]int) {
 
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {

@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Println("Choose a program to run:\n\t1. Sequential Search\n\t2. Add array members\n\t3. Exchange sort")
 	fmt.Println("\t4. Matrix multiplication")
-	
+
 	fmt.Print("> ")
 	userInput := GetUserData()
 	x, _ := strconv.Atoi(userInput)
@@ -17,11 +17,11 @@ func main() {
 	case 1:
 		mainSequential()
 	case 2:
-		temp := addArray(5, []int{1, 2, 3, 20, -1})
+		temp := AddArray(5, []int{1, 2, 3, 20, -1})
 		fmt.Println(temp)
 	case 3:
 		ejerciceArray := []int{4, 2, 6, 1, 0, 9}
-		exchangeSort(len(ejerciceArray), ejerciceArray)
+		ExchangeSort(len(ejerciceArray), ejerciceArray)
 		fmt.Println(ejerciceArray)
 	case 4:
 		ar1 := [][]int{{1, 3, 4}, {8, 3, 1}, {4, 1, 6}}
@@ -33,9 +33,9 @@ func main() {
 			ar3[i] = make([]int, n)
 		}
 
-		matrixMultiplication(n, ar1, ar2, ar3)
+		MatrixMultiplication(n, ar1, ar2, ar3)
 		fmt.Println(ar3)
-		
+
 	default:
 		fmt.Println("No such case")
 	}
