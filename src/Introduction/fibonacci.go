@@ -14,18 +14,21 @@ func FibonacciRecursive(n int) int {
 }
 
 func FibonacciIterative(n int) int {
-	f := make([]int, n+1)
+	f := make([]int, 2)
 
 	f[0] = 0
 
 	if n > 0 {
 		f[1] = 1
 		for i := 2; i <= n; i++ {
-			f[i] = f[i-1] + f[i-2]
+			e1 := f[0]
+			e2 := f[1]
+			f[1] = e1 + e2
+			f[0] = e2
 		}
 	}
 
-	return f[n]
+	return f[1]
 
 }
 
