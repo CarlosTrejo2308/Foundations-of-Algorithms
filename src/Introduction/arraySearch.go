@@ -35,6 +35,7 @@ func BinSearch(S []int, x int, location *int) int {
 
 var array = []int{3, 4, 8, 9, 12, 24, 27, 70, 80, 81, 82, 83, 90, 100}
 
+// TODO: Move to independent module
 func mainBinSearch() {
 	var location int
 
@@ -92,6 +93,7 @@ func SequentialSearch(n int, S []int, x int, location *int) int {
 	return comparisons
 }
 
+// TODO: Move to independent module
 func mainSequential() {
 	n := cap(array)
 	var location int
