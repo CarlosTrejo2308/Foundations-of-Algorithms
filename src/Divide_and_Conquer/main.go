@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Choose a program to run:\n\t1. Binary Search (Recursive)\n")
+	fmt.Println("Choose a program to run:\n\t1. Binary Search (Recursive)")
 
 	fmt.Print("> ")
 	userInput := GetUserData()

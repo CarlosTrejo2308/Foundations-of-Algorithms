@@ -25,6 +25,9 @@ func GetUserData() string {
 
 }
 
+// BinSearcgRecursive recives a number to find, the low and high indexes and an
+// sorted array of numbers, it then returns the index of where the number is in
+// the array, if it's not found it returns a -1
 func binSearchRecursive(n, low, high int, S []int) (location int) {
 	var mid int
 
